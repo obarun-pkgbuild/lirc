@@ -9,15 +9,12 @@ _pkgver=0.9.4d
 pkgrel=2
 epoch=1
 pkgdesc="Linux Infrared Remote Control utilities"
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url="http://www.lirc.org/"
 license=('GPL')
 depends=('alsa-lib' 'libx11' 'libftdi' 'libusb-compat')
 makedepends=('help2man' 'alsa-lib' 'libx11' 'libxslt' 'python')
-optdepends=('python: for lirc-setup, irdb-get and pronto2lirc'
-			'lirc-s6rcserv: lirc s6-rc service'
-			'lircd-runitserv: lirc runit service'
-			'lircmd-runitserv: lircmd runit service')
+optdepends=('python: for lirc-setup, irdb-get and pronto2lirc')
 provides=('lirc-utils')
 conflicts=('lirc-utils')
 replaces=('lirc-utils')
